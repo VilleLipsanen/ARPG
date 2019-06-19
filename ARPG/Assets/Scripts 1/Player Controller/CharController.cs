@@ -122,7 +122,7 @@ public class CharController : MonoBehaviour
          }
      }*/
 
-    private void OnCollisionEnter(Collision other)
+   /* private void OnCollisionEnter(Collision other)
     {
         PlayerHealth playerHealth = GetComponent<PlayerHealth>();
         if (other.gameObject.CompareTag("Item"))
@@ -130,5 +130,5 @@ public class CharController : MonoBehaviour
             playerHealth.HealthChange(healAmount);
             other.gameObject.SetActive(false);
         }
-    }
+    }*/
 }

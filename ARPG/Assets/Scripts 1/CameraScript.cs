@@ -38,6 +38,7 @@ public class CameraScript : MonoBehaviour
         {
             
             transform.LookAt(target);
+            
         }
     }
 }
