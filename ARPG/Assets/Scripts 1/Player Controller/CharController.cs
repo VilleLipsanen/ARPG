@@ -39,8 +39,8 @@ public class CharController : MonoBehaviour
 
     void FixedUpdate()
     {
-        float h = Input.GetAxisRaw("HorizontalKey");
-        float v = Input.GetAxisRaw("VerticalKey");
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
         Move(h, v);
         //Turning();
     }
@@ -63,6 +63,11 @@ public class CharController : MonoBehaviour
         Quaternion _rotation = transform.rotation;
         _rotation.eulerAngles = new Vector3(_rotation.eulerAngles.x, Cam.transform.rotation.eulerAngles.y, _rotation.eulerAngles.z);
         transform.rotation = _rotation;
+    }
+
+    public void gona()
+    {
+        Debug.Log("gona");
     }
 
 
@@ -97,11 +102,11 @@ public class CharController : MonoBehaviour
 
          if (h != 0 || v != 0)
          {
-             anim.SetBool("Run", true);
+             //anim.SetBool("Run", true);
          }
          else
          {
-             anim.SetBool("Run", false);
+             //anim.SetBool("Run", false);
          }
         //take input from axixes
         input = new Vector2(h, v);
@@ -124,11 +129,11 @@ public class CharController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        PlayerHealth playerHealth = GetComponent<PlayerHealth>();
-        if (other.gameObject.CompareTag("Item"))
+        //PlayerHealth playerHealth = GetComponent<PlayerHealth>();
+        //if (other.gameObject.CompareTag("Item"))
         {
-            playerHealth.HealthChange(healAmount);
-            other.gameObject.SetActive(false);
+            //playerHealth.HealthChange(healAmount);
+            //other.gameObject.SetActive(false);
         }
     }
 }

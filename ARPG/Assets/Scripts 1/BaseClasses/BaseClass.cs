@@ -22,7 +22,7 @@ public class BaseClass : MonoBehaviour
     public int Level;
     int Exp;
 
-    List<BaseAttack> attacks;
-    List<BaseMagic> magics;
+    public List<BaseAttack> attacks;
+    public List<BaseMagic> magics;
 
 }
