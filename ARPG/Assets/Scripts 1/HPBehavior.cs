@@ -5,7 +5,7 @@ using UnityEngine;
 public class HPBehavior : MonoBehaviour
 {
 
-    int HP = 100;
+    public int HP = 100;
 
     // Start is called before the first frame update
     void Start()
