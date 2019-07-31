@@ -95,14 +95,7 @@ public class CharController : MonoBehaviour
     void Move(float h, float v)
     {
 
-         if (h != 0 || v != 0)
-         {
-             anim.SetBool("Run", true);
-         }
-         else
-         {
-             anim.SetBool("Run", false);
-         }
+         
         //take input from axixes
         input = new Vector2(h, v);
         //clamp so doesnt go too fast diagonally
