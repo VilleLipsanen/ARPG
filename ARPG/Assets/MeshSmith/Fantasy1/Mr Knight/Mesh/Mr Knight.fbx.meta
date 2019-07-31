@@ -119,12 +119,12 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
-    animationImportErrors: 
-    animationImportWarnings: 
-    animationRetargetingWarnings: 
+    motionNodeName:
+    rigImportErrors:
+    rigImportWarnings:
+    animationImportErrors:
+    animationImportWarnings:
+    animationRetargetingWarnings:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
@@ -215,7 +215,23 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.3500949
+        functionName: attackStart
+        data:
+        objectReferenceParameter: {fileID: 11500000, guid: 4aa3986ed75af444a97b15b90fb1c8e1,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.65495205
+        functionName: ComboCheck
+        data:
+        objectReferenceParameter: {fileID: 11500000, guid: 06ef9c684d01c0642a68526928cb0d30,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -223,7 +239,7 @@ ModelImporter:
     - serializedVersion: 16
       name: atk02
       takeName: atk02
-      firstFrame: 0
+      firstFrame: 15
       lastFrame: 50
       wrapMode: 0
       orientationOffsetY: 0
@@ -243,7 +259,23 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.6956522
+        functionName: ComboCheck
+        data:
+        objectReferenceParameter: {fileID: 11500000, guid: 06ef9c684d01c0642a68526928cb0d30,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6308812
+        functionName: attackStart
+        data:
+        objectReferenceParameter: {fileID: 11500000, guid: 4aa3986ed75af444a97b15b90fb1c8e1,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -271,7 +303,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.6070287
+        functionName: ComboCheck
+        data:
+        objectReferenceParameter: {fileID: 11500000, guid: 06ef9c684d01c0642a68526928cb0d30,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -535,10 +575,10 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
@@ -575,7 +615,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -583,6 +623,6 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:
