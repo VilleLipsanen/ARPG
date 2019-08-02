@@ -95,9 +95,9 @@ public class BossAI : MonoBehaviour
     private void LateUpdate()
     {
         dist = Vector3.Distance(transform.position, player.position);
-        if (dist >= 25f)
+        if (dist >= 45f)
             ChangeState(State.Idle);
-        if (dist < 25f && dist > 3f)
+        if (dist < 45f && dist > 3f)
         {
             if(SkeletonIndex < Skeletons.Count)
             {

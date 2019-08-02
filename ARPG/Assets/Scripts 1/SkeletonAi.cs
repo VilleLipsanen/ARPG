@@ -76,7 +76,7 @@ public class SkeletonAi : MonoBehaviour
     private void LateUpdate()
     {
         dist = Vector3.Distance(transform.position, player.position);
-        if (dist < 25f && dist > 3f)
+        if (dist < 25f && dist > 1.2f)
         {
             if (timer <= 0f)
             {
@@ -84,7 +84,7 @@ public class SkeletonAi : MonoBehaviour
                 ChangeState(State.Chase);
             }
         }
-        if (dist < 3f)
+        if (dist < 1.2f)
         {
             ChangeState(State.Attack);
         }

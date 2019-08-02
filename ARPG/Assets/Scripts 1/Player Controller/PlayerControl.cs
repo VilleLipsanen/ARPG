@@ -31,6 +31,7 @@ public class PlayerControl : MonoBehaviour
         noOfClicks = 0;
         canClick = true;
         canMove = true;
+        Cursor.visible = false;
     }
 
     //No need for update function right now, physics work better in Fixed Update
@@ -54,8 +55,8 @@ public class PlayerControl : MonoBehaviour
             if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
             {
                 //rotate from this /........to this............../.........at this speed 
-                rigidBody.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), turnSpeed * Time.deltaTime);
-                rigidBody.transform.position += transform.forward * Time.deltaTime * speed;
+                rigidBody.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), turnSpeed * Time.fixedDeltaTime);
+                rigidBody.transform.position += transform.forward * Time.fixedDeltaTime * speed;
                 animator.SetInteger("animation", 10);//Walk or run animation works well here
             }
             else
